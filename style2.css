@@ -1,0 +1,105 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+/* body */
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    width: 100%;
+    display: flex ;
+    flex-wrap: wrap;
+    align-items: center;
+  
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+ 
+/* container */
+
+.container {
+    background-color: white;
+    width:40%;
+    min-width:300px;
+    position:absolute;
+    transform: translate(-50%, -50%);
+    top:50%;
+    left:50%;
+    padding:20px 0;
+    padding-bottom:50px;
+    border-radius:10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.338);
+    
+}
+
+/* Display */
+
+.timer-display {
+    position:relative;
+    width:92%;
+    display: flex;
+
+    flex-wrap:wrap ;
+    background:white;
+    left:4%;
+    font-family: 'roboto mono',monospace;
+    color:rgb(51, 66, 66);
+    font-size:45px;
+    padding: 40px;
+    border-radius:10px;
+    align-items:center;
+    justify-content: space-around;
+    box-shadow:0 0 20px rgba(65,5,145,0.25);
+}
+
+/* buttton */
+.buttons{
+    width:80%;
+    margin: 50px auto 0 auto;
+    display:flex;
+    
+    justify-content: space-around;
+}
+
+.buttons button{
+    width:120px;
+    height:45px;
+    background-color:rgb(146, 32, 146);
+    color:white;
+    border: none;
+    font-family:'Poppins',sans-serif;
+    font-size: 18px;
+    border-radius:5px;
+    cursor:pointer;
+    outline:none;
+}
+
+.buttons button:nth-last-child(2){
+    background-color: rgb(216, 49, 49);
+}
+
+.buttons button:nth-last-child(1){
+    background-color:rgb(225, 225, 8);
+}
+
+.buttons button:hover{
+    box-shadow:0 0 20px rgba(0,0,0,0.25);
+}
